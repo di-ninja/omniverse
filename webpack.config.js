@@ -5,7 +5,7 @@ const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
 	entry:{
-		'browser':['./src/omniverse.js'],
+		'browser':['./dist/omniverse.js'],
 	},
 	output: {
 		filename: '[name].js',
@@ -14,11 +14,11 @@ module.exports = {
 	},
     module: {
 		rules : [
-			{
-				test: /\.(js)?$/,
-				exclude: /node_modules/,
-				loader: "babel-loader",
-			},
+			//{
+				//test: /\.(js)?$/,
+				//exclude: /node_modules/,
+				//loader: "babel-loader",
+			//},
 		],
     },
     externals: [
