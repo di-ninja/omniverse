@@ -1,8 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const nodeExternals = require('webpack-node-externals');
-
 module.exports = {
 	entry:{
 		'browser':['./dist/omniverse.js'],
@@ -14,15 +12,26 @@ module.exports = {
 	},
     module: {
 		rules : [
-			//{
-				//test: /\.(js)?$/,
-				//exclude: /node_modules/,
-				//loader: "babel-loader",
-			//},
+			{
+				test: /\.(js)?$/,
+				exclude: /node_modules/,
+				loader: "babel-loader",
+			},
 		],
     },
-    externals: [
-		nodeExternals(),
-    ],
+    externals: {
+		'di-strategy': {
+			commonjs: 'di-strategy',
+			commonjs2: 'di-strategy',
+		},
+		'mixwith': {
+			commonjs: 'mixwith',
+			commonjs2: 'mixwith',
+		},
+		'interface-prototype': {
+			commonjs: 'interface-prototype',
+			commonjs2: 'interface-prototype',
+		},
+    },
     devtool: 'source-map',
 };
