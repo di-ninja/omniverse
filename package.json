@@ -50,7 +50,7 @@
     "webpack": "^3.9.1"
   },
   "dependencies": {
-    "di-strategy": "^6.3.0",
+    "di-strategy": "^6.4.0",
     "interface-prototype": "^1.1.0",
     "mixwith": "^0.1.1"
   }
