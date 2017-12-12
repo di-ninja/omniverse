@@ -18,3 +18,12 @@ export {
 	Mixin,
 	
 } from 'mixwith'
+
+
+
+
+import {
+	InterfacePrototype
+} from 'interface-prototype'
+import container from 'di-strategy'
+container.setInterfacePrototypeDefault(InterfacePrototype);
