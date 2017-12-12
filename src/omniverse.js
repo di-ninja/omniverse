@@ -21,6 +21,43 @@ export {
 
 
 
+export {
+	//For Properties and Methods
+	readonly,
+	nonconfigurable,
+	decorate,
+	extendDescriptor,
+
+	//For Properties
+	nonenumerable,
+	lazyInitialize,
+	
+	//For Classes and Methods
+	autobind,
+
+	//For Methods
+	deprecate,
+	suppressWarnings,
+	enumerable,
+	override,
+	time,
+	profile,
+
+
+	//Helpers
+	applyDecorators,
+	
+} from 'core-decorators'
+
+export debug from 'decorator-debug'
+export { performance } from 'decorator-performance'
+
+export memoize from './memoize'
+
+export  { conditional } from 'conditional-decorator'
+export condition from './condition'
+
+
 
 import {
 	InterfacePrototype
