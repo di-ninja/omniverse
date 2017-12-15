@@ -56,7 +56,7 @@
     "decorator-performance": "^0.1.0",
     "di-ninja": "^1.0.0",
     "fast-memoize": "^2.2.8",
-    "interface-prototype": "^1.1.0",
+    "interface-prototype": "^1.1.1",
     "mixwith": "^0.1.1"
   },
   "files": [
