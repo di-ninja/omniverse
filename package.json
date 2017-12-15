@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redcatjs/omniverse.git"
+    "url": "git+https://github.com/di-ninja/omniverse.git"
   },
   "keywords": [
     "interface",
@@ -29,9 +29,9 @@
   "author": "Jo <jo@redcat.ninja> (https://redcat.ninja)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/redcatjs/omniverse/issues"
+    "url": "https://github.com/di-ninja/omniverse/issues"
   },
-  "homepage": "https://github.com/redcatjs/omniverse#readme",
+  "homepage": "https://github.com/di-ninja/omniverse#readme",
   "devDependencies": {
     "babel-cli": "^7.0.0-beta.3",
     "babel-loader": "^7.1.2",
@@ -54,9 +54,14 @@
     "core-decorators": "^0.20.0",
     "decorator-debug": "^1.0.3",
     "decorator-performance": "^0.1.0",
-    "di-strategy": "^6.4.1",
+    "di-ninja": "^1.0.0",
     "fast-memoize": "^2.2.8",
     "interface-prototype": "^1.1.0",
     "mixwith": "^0.1.1"
-  }
+  },
+  "files": [
+    "dist",
+    "browser.js",
+    "browser.js.map"
+  ]
 }
