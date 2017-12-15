@@ -1,4 +1,4 @@
-export container from 'di-strategy'
+export container from 'di-ninja'
 
 export {
 	
@@ -62,5 +62,5 @@ export condition from './condition'
 import {
 	InterfacePrototype
 } from 'interface-prototype'
-import container from 'di-strategy'
+import container from 'di-ninja'
 container.setInterfacePrototypeDefault(InterfacePrototype);

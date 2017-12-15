@@ -20,9 +20,9 @@ module.exports = {
 		],
     },
     externals: {
-		'di-strategy': {
-			commonjs: 'di-strategy',
-			commonjs2: 'di-strategy',
+		'di-ninja': {
+			commonjs: 'di-ninja',
+			commonjs2: 'di-ninja',
 		},
 		'mixwith': {
 			commonjs: 'mixwith',
