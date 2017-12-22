@@ -1,6 +1,6 @@
 {
   "name": "omniverse",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "omniverse",
   "main": "node.js",
   "module": "browser.js",
