@@ -6,7 +6,7 @@
   "module": "browser.js",
   "browser": "browser.js",
   "scripts": {
-    "build": "npm run build:node & npm run build:browser & npm run build:browser:test",
+    "build": "npm run build:node && npm run build:browser && npm run build:browser:test",
     "build:node": "babel src --out-dir dist --source-maps inline",
     "build:browser": "webpack",
     "build:browser:test": "webpack --config webpack.config.test.js",
