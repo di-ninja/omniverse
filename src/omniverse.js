@@ -64,3 +64,5 @@ import {
 } from 'interface-prototype'
 import container from 'di-ninja'
 container.setInterfacePrototypeDefault(InterfacePrototype);
+
+export compose from './compose'
