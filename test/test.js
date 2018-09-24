@@ -1,43 +1,45 @@
 import { expect } from 'chai'
 
+
 import {
-	mixin,
-	Mixin,
-} from '../browser'
+  mixin,
+  Mixin,
+// } from '../browser'
+} from '../src/omniverse'
 
 describe('mixwith @mixin decorator',function(){
-	
-	const MyMixin = Mixin((superclass) => class extends superclass {
 
-		constructor(...args) {
-			super(...args);
-		}
+  const MyMixin = Mixin((superclass) => class extends superclass {
 
-		
-		hello() {
-			return super.hello();
-		}
+    constructor(...args) {
+      super(...args);
+    }
 
-		who() {
-			return 'world !';
-		}
-		
-	});
-	
-	@mixin(MyMixin)
-	class A{
-		hello(){
-			return 'Hello';
-		}
-		helloWorld(){
-			return this.hello()+' '+this.who();
-		}
-	}
-	
-	it('sould return "Hello world !"',function(){
-		const a = new A();
-		expect( a.helloWorld() ).equal("Hello world !");		
-	});
-	
+
+    hello() {
+      return super.hello();
+    }
+
+    who() {
+      return 'world !';
+    }
+
+  });
+
+  @mixin(MyMixin)
+  class A{
+    hello(){
+      return 'Hello';
+    }
+    helloWorld(){
+      return this.hello()+' '+this.who();
+    }
+  }
+
+  it('sould return "Hello world !"',function(){
+    const a = new A();
+    expect( a.helloWorld() ).equal("Hello world !");
+  });
+
 
 });

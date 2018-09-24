@@ -1,52 +1,51 @@
-const webpack = require('webpack');
-const path = require('path');
-
 module.exports = {
-  entry:{
-    'browser':['./dist/omniverse.js'],
+  entry: {
+    'browser': ['./src/omniverse.js']
   },
   output: {
     filename: '[name].js',
-    library: "omniverse",
-    libraryTarget: "umd"
+    path: __dirname,
+    library: 'omniverse',
+    libraryTarget: 'umd'
   },
-    module: {
-    rules : [
+  module: {
+    rules: [
       {
         test: /\.(js)?$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
-      },
-    ],
-    },
-    externals: {
-    'di-ninja': {
-      commonjs: 'di-ninja',
-      commonjs2: 'di-ninja',
-    },
-    'mixwith': {
-      commonjs: 'mixwith',
-      commonjs2: 'mixwith',
-    },
+        loader: 'babel-loader'
+      }
+    ]
+  },
+  devtool: 'source-map',
 
-    'core-decorators': {
-      commonjs: 'core-decorators',
-      commonjs2: 'core-decorators',
-    },
-    'decorator-debug': {
-      commonjs: 'decorator-debug',
-      commonjs2: 'decorator-debug',
-    },
-    'fast-memoize': {
-      commonjs: 'fast-memoize',
-      commonjs2: 'fast-memoize',
-    },
-    'conditional-decorator': {
-      commonjs: 'conditional-decorator',
-      commonjs2: 'conditional-decorator',
-    },
+  // externals: {
+    // 'di-ninja': {
+      // commonjs: 'di-ninja',
+      // commonjs2: 'di-ninja',
+    // },
+    // 'mixwith': {
+      // commonjs: 'mixwith',
+      // commonjs2: 'mixwith',
+    // },
+
+    // 'core-decorators': {
+      // commonjs: 'core-decorators',
+      // commonjs2: 'core-decorators',
+    // },
+    // 'decorator-debug': {
+      // commonjs: 'decorator-debug',
+      // commonjs2: 'decorator-debug',
+    // },
+    // 'fast-memoize': {
+      // commonjs: 'fast-memoize',
+      // commonjs2: 'fast-memoize',
+    // },
+    // 'conditional-decorator': {
+      // commonjs: 'conditional-decorator',
+      // commonjs2: 'conditional-decorator',
+    // },
 
 
-    },
-    devtool: 'source-map',
-};
+  // },
+}

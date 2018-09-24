@@ -8,8 +8,8 @@
   "scripts": {
     "build": "npm run build:node && npm run build:browser && npm run build:browser:test",
     "build:node": "babel src --out-dir dist --source-maps inline",
-    "build:browser": "webpack",
-    "build:browser:test": "webpack --config webpack.config.test.js",
+    "build:browser": "webpack --mode production",
+    "build:browser:test": "webpack --mode development --config webpack.config.test.js",
     "dev": "npm run build -- --watch",
     "mocha": "mocha --require @babel/register",
     "test": "npm run mocha -- test/test.js",
@@ -47,12 +47,13 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/register": "^7.0.0",
     "@babel/runtime": "^7.0.0",
-    "babel-loader": "^8.0.0",
+    "babel-loader": "^8.0.2",
     "chai": "^4.1.2",
     "express": "^4.16.2",
     "mocha": "^5.2.0",
-    "sinon": "^4.1.2",
-    "webpack": "^3.9.1"
+    "sinon": "^6.3.4",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1"
   },
   "dependencies": {
     "conditional-decorator": "^0.1.7",
@@ -60,7 +61,8 @@
     "decorator-debug": "^1.0.3",
     "di-ninja": "^1.10.2",
     "fast-memoize": "^2.2.8",
-    "mixwith": "^0.1.1"
+    "mixwith": "^0.1.1",
+    "mocha-loader": "^2.0.0"
   },
   "files": [
     "dist",
