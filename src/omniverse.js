@@ -8,7 +8,7 @@ export {
   InterfacePrototype,
   InterfaceClass,
 
-} from 'interface-prototype'
+} from 'di-ninja/dist/interface-prototype'
 
 export mixin from './mixin'
 
@@ -60,7 +60,7 @@ export condition from './condition'
 
 import {
   InterfacePrototype
-} from 'interface-prototype'
+} from 'di-ninja/dist/interface-prototype'
 import container from 'di-ninja'
 container.setInterfacePrototypeDefault(InterfacePrototype);
 

@@ -28,10 +28,6 @@ module.exports = {
       commonjs: 'mixwith',
       commonjs2: 'mixwith',
     },
-    'interface-prototype': {
-      commonjs: 'interface-prototype',
-      commonjs2: 'interface-prototype',
-    },
 
     'core-decorators': {
       commonjs: 'core-decorators',

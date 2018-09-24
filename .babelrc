@@ -1,13 +1,29 @@
 {
-	"presets": [
-		"stage-3",
-		"env",
-	],
-	"plugins": [
-		"transform-export-extensions",
-		"transform-decorators",
-		"syntax-decorators",
-		"transform-class-properties",
-		"transform-runtime",
-	]
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/plugin-proposal-export-namespace-from",
+    "@babel/plugin-transform-flow-strip-types",
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": false
+      }
+    ],
+
+    [
+      "@babel/plugin-transform-runtime",
+      {
+
+      }
+    ],
+  ]
 }
